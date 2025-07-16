@@ -47,6 +47,7 @@
     min-height: 100vh;
     z-index: 998;
     background: rgba(0, 0, 0, 0.5);
+    inset: 0;
     backdrop-filter: blur(2px);
     display: none;
   }
@@ -57,8 +58,9 @@
     left: 0;
     width: 40%;
     z-index: 999;
-    min-height: 100vh;
+    height: 100vh;
     background: var(--color-secondary);
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -85,10 +87,18 @@
   .mobile-menu-bar .mobile-num {
     color: var(--color-white);
     font-size: 3rem;
+    transition: all 0.3s;
+  }
+  .mobile-menu-bar .mobile-num:hover {
+    color: var(--color-primary);
   }
   .mobile-menu li a {
     font-size: 2rem;
     color: var(--color-white);
+    transition: all 0.3s;
+  }
+  .mobile-menu li a:hover {
+    color: var(--color-primary);
   }
 }
 
