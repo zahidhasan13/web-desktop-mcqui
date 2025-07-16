@@ -67,6 +67,9 @@ span {
   background: var(--color-primary);
   color: var(--color-secondary);
 }
+section {
+  padding: 5rem 0;
+}
 
 /* Header CSS Start */
 .header {
@@ -175,3 +178,33 @@ nav .header-right a:hover {
   width: 16rem;
 }
 /* google-review End */
+/* Welcome Start */
+.welcome-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.welcome-right h2 {
+  font-size: 5rem;
+  font-family: "ProximaNova-Bold";
+  line-height: 1;
+  text-transform: uppercase;
+}
+.welcome-right p {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  margin-top: 2rem;
+}
+.welcome-right-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 3rem 0;
+}
+.welcome-right-bottom h3 {
+  font-size: 2rem;
+  line-height: 1;
+}
+.welcome-right-bottom p {
+  margin: 0;
+}
+/* Welcome End */
