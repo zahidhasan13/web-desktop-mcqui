@@ -1,7 +1,7 @@
 /* Variable */
 :root {
   --color-primary: #c4ab6b;
-  --color-secondary: #222222;
+  --color-secondary: #131313;
   --color-tertiary: #666666;
   --color-white: #ffffff;
 }
@@ -144,3 +144,34 @@ nav .header-right a:hover {
   margin-top: 2rem;
 }
 /* Hero Section End */
+/* google-review Start */
+.google-review {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  padding: 2rem 0;
+  background: var(--color-secondary);
+}
+.google-review h2 {
+  font-size: 9rem;
+  line-height: 1;
+  font-family: "ProximaNova-Bold";
+  color: var(--color-primary);
+}
+.google-review .star-count {
+  font-size: 4rem;
+  color: var(--color-white);
+  font-family: "ProximaNova-Bold";
+  line-height: 1;
+  text-transform: uppercase;
+}
+.google-review .star-count p {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.google-review .star-count p img {
+  width: 16rem;
+}
+/* google-review End */
