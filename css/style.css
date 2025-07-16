@@ -2,6 +2,7 @@
 :root {
   --color-primary: #c4ab6b;
   --color-secondary: #131313;
+  --color-section-head: #222223;
   --color-tertiary: #666666;
   --color-white: #ffffff;
 }
@@ -41,6 +42,11 @@ a,
 span {
   display: inline-block;
 }
+h3 {
+  font-size: 2.8rem;
+  line-height: 1.2;
+  font-family: "ProximaNova-Bold";
+}
 .btn {
   padding: 1rem 2rem;
   font-size: 1.8rem;
@@ -70,6 +76,21 @@ span {
 section {
   padding: 5rem 0;
 }
+.section-title {
+  font-size: 4.8rem;
+  line-height: 1;
+  font-family: "ProximaNova-Bold";
+  text-transform: uppercase;
+}
+.text-center {
+  text-align: center;
+}
+.text-white {
+  color: var(--color-white);
+}
+.text-head {
+  color: var(--color-section-head);
+}
 
 /* Header CSS Start */
 .header {
@@ -80,10 +101,6 @@ nav.nav-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-nav.nav-bar a.logo {
-  /* font-size: 4rem;
-  color: var(--color-white); */
 }
 nav .menu {
   display: flex;
@@ -183,12 +200,6 @@ nav .header-right a:hover {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-.welcome-right h2 {
-  font-size: 5rem;
-  font-family: "ProximaNova-Bold";
-  line-height: 1;
-  text-transform: uppercase;
-}
 .welcome-right p {
   font-size: 1.8rem;
   line-height: 1.2;
@@ -200,7 +211,7 @@ nav .header-right a:hover {
   justify-content: space-between;
   margin: 3rem 0;
 }
-.welcome-right-bottom h3 {
+.welcome-right-bottom h4 {
   font-size: 2rem;
   line-height: 1;
 }
@@ -208,3 +219,94 @@ nav .header-right a:hover {
   margin: 0;
 }
 /* Welcome End */
+/* Complex services Start */
+.complex-section {
+  background: var(--color-secondary);
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8rem;
+  margin: 5rem 0;
+}
+.service-item {
+  text-align: center;
+  color: var(--color-white);
+}
+.service-item p {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  margin-top: 2rem;
+}
+.service-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 10rem;
+}
+.service-bottom a {
+  font-size: 2rem;
+  color: var(--color-white);
+}
+.service-bottom a:hover {
+  color: var(--color-primary);
+}
+/* Complex services End */
+/* Management Start */
+.management-subhead {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  width: 70rem;
+  margin: 3rem auto;
+  text-align: center;
+}
+.management-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+.management-item {
+  display: flex;
+  position: relative;
+}
+.management-item-2 {
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+}
+.management-item img,
+.management-item-2 img {
+  border-radius: 1rem;
+}
+.management-text {
+  background: #f8f5f0;
+  width: 430px;
+  height: 310px;
+  border-radius: 1rem;
+  z-index: 10;
+  flex-grow: 1;
+  position: absolute;
+  right: 0;
+  top: 30%;
+  padding: 3rem 8rem 3rem 3rem;
+}
+.management-text p,
+.management-text-2 p {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  margin: 1rem 0 2rem 0;
+}
+.management-text-2 {
+  background: #f8f5f0;
+  width: 430px;
+  height: 310px;
+  border-radius: 1rem;
+  z-index: 10;
+  flex-grow: 1;
+  position: absolute;
+  left: 0;
+  top: 30%;
+  padding: 3rem 8rem 3rem 3rem;
+}
+/* Management End */
