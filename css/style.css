@@ -91,6 +91,9 @@ section {
 .text-head {
   color: var(--color-section-head);
 }
+.text-primary {
+  color: var(--color-primary);
+}
 
 /* Header CSS Start */
 .header {
@@ -100,7 +103,6 @@ section {
 nav.nav-bar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 nav .menu {
   display: flex;
@@ -264,7 +266,7 @@ nav .header-right a:hover {
 .management-content {
   display: flex;
   flex-direction: column;
-  gap: 5rem;
+  gap: 6rem;
 }
 .management-item {
   display: flex;
@@ -310,3 +312,105 @@ nav .header-right a:hover {
   padding: 3rem 8rem 3rem 3rem;
 }
 /* Management End */
+/* Mission Start */
+.mission-section {
+  background: url(../assets/images/Our\ Mission.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.mission-section p {
+  width: 71rem;
+  color: var(--color-white);
+  font-size: 1.8rem;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+/* Mission End */
+/* Message Start */
+.form-container {
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 80rem;
+  margin: 0 auto;
+  width: 100%;
+}
+.form-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.form-group input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #c5c3c1;
+  color: #8f8e8d;
+  border-radius: 5px;
+  font-size: 1.8rem;
+}
+.mobile-num {
+  display: flex;
+  border: 1px solid #c5c3c1;
+  border-radius: 5px;
+  width: 50%;
+}
+.mobile-num select {
+  font-size: 1.8rem;
+  color: #8f8e8d;
+}
+.mobile-num input {
+  border: none;
+}
+.form-group .zip {
+  width: 50%;
+}
+.service-type {
+  margin-bottom: 15px;
+}
+.service-type h4 {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  color: #8f8e8d;
+}
+.service-type label {
+  margin-right: 15px;
+  font-size: 1.8rem;
+  color: #8f8e8d;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.consent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.consent-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 70%;
+}
+.consent-left label {
+  font-size: 1.4rem;
+  line-height: 1.2;
+  color: #8f8e8d;
+}
+.consent input {
+  margin-top: 5px;
+}
+.consent button {
+}
+
+/* Message End */
