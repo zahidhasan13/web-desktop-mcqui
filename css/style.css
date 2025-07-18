@@ -103,6 +103,7 @@ section {
 nav.nav-bar {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 nav .menu {
   display: flex;
@@ -181,14 +182,12 @@ nav .header-right a:hover {
   font-family: "ProximaNova-Bold";
   color: var(--color-primary);
 }
-.google-review .star-count {
+.google-review .star-count p {
   font-size: 4rem;
   color: var(--color-white);
   font-family: "ProximaNova-Bold";
   line-height: 1;
   text-transform: uppercase;
-}
-.google-review .star-count p {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -356,17 +355,17 @@ textarea {
   border-radius: 5px;
   font-size: 1.8rem;
 }
-.mobile-num {
+.mobile-code {
   display: flex;
   border: 1px solid #c5c3c1;
   border-radius: 5px;
   width: 50%;
 }
-.mobile-num select {
+.mobile-code select {
   font-size: 1.8rem;
   color: #8f8e8d;
 }
-.mobile-num input {
+.mobile-code input {
   border: none;
 }
 .form-group .zip {
